@@ -185,7 +185,5 @@ report = dp.Report(
     )
 )
 
-print(dfSentiment["sentiment_score"].describe())
-print(np.var(dfSentiment["sentiment_score"], ddof = 1))
 #report.save('chart.html')
-#report.upload(name = "Histogram")
+report.upload(name = "Histogram")
